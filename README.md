@@ -1,4 +1,2 @@
-# Demo1
-Test file.
-Edited again.
-Edited on 5/03/2021
+This is a dynamic website which gives current weather report of the city name entered.
+
