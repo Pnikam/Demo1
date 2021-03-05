@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Report</title>
+    <style>
+        body{
+        background-image: url(static/afternoon.jpg);
+        background-repeat : no-repeat;
+        background-size : 100%;
+        }
+
+        .report{
+        height : 500px;
+        width : 500px;
+        top: 50%;
+        left: 40%;
+        position: absolute;
+        margin-top: -244px;
+        margin-left: -100px;
+        border: 4px solid white;
+        border-radius: 10px;
+        text-align: center;
+        font-size : 20px;
+        font-style : Arial;
+        color : white;
+        }
+
+        #temp{
+        padding :2px 2px 2px 2px;
+        }
+    </style>
+</head>
+<body >
+<div class="report">
+<h3 >Weather report for {{ name }} : </h3><br>
+    <p id="temp"> Temperature : {{ temp }} °C</p><br>
+    <p id = "press">Pressure : {{ pressure }} hPa</p> <br>
+    <p id = "hum">Humidity : {{ humidity }} g.m-3</p><br>
+    <p id = "weather">Weather : {{weather}}</p><br>
+</div>
+</body>
+</html>
